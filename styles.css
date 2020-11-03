@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+    color: white;
+    
+
+    /* Full height */
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./food.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+  
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif
+}
+*::placeholder{
+    font-size: 1.1rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+#text{
+    font-size: 1.2rem;
+}
+.container{
+    width: 95%;
+   
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+ul{
+    margin-bottom: 10%;
+}
+.enclosing_container{
+    /* border: 2px solid blueviolet; */
+    max-width: 400px;
+    padding: 40px 0;
+    margin: auto;
+    
+}
+.single_recipe{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color:  #5755c5;;
+    width: 100%;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    text-indent: 10px;
+    margin-bottom: 3px;
+    color: white;
+  
+}
+.dropdown{
+    display: none;
+    background-color: #fff;
+    color: #463f72;
+    font-size: 15px;
+    width: 100%;
+    margin: auto;
+  
+}
+.show {display:block;}
+li{
+    display: flex;
+    width: 100%;
+}
+li span{
+    flex: 1;
+    text-align: left;
+    align-self: center;
+}
+li i {
+    align-self: center;
+    margin-right: 3%;
+    padding-left: 3px;
+    border-left: 2px solid black;
+    cursor: pointer;
+   
+}
+
+.user_input{
+    width: 100%;
+  
+}
+#recipe_title{
+    /* width: ; */
+    width: 80%;
+    text-indent: 10px;
+    line-height: 2.5rem;
+    border: none;
+    margin: auto;
+    font-size: 1.5rem;
+    
+}
+#recipe_title::placeholder{
+    font-size: 1.5rem;
+}
+textarea{
+    width: 80%;
+    margin: auto;
+    text-indent: 10px;
+}
+#submit {
+    margin: 5px;
+    padding: 8px 20px;
+    background-color:  #5755c5;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:  #61589b;
+}

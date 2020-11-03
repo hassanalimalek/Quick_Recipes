@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Recipes</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+
+
+    <link rel="icon" href="./food_icon.png"  "> 
+    <script src="https://kit.fontawesome.com/585bb59231.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+       
+            <h2>Quick Recipes</h2>
+            <div class="enclosing_container">
+                <ul>
+                   
+                </ul>
+                <form action="">
+                    <div class="input-group">
+                        <label for="recipe" id="text">Add a new recipe</label><br><br>
+                        <div class="user_input">
+                            <input type="text" name="recipe" id="recipe_title" placeholder="Recipe Title" required><br><br>
+                            <textarea  name="recipe_details" id="" rows="10" placeholder="Recipe Details" required></textarea ><br>
+                            <input type="submit" value="Add" id="submit">
+                        </div>
+                    </div>
+                </form>
+                
+        </div>
+    </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    
+        
+        <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+            apiKey: "AIzaSyCITSCFCBqpnX2tGTydRirE-0bszch2W7A",
+            authDomain: "recipes-2d4e7.firebaseapp.com",
+            databaseURL: "https://recipes-2d4e7.firebaseio.com",
+            projectId: "recipes-2d4e7",
+            storageBucket: "recipes-2d4e7.appspot.com",
+            messagingSenderId: "1002629437829",
+            appId: "1:1002629437829:web:dce55158f917a9711cccec",
+            measurementId: "G-6GY3Z0LM46"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          
+        // Get a reference to the database service
+        var database = firebase.firestore();
+        </script>
+        <script src="./app.js"></script>
+</body>
+</html>
